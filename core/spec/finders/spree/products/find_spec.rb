@@ -451,6 +451,8 @@ module Spree
           create(
             :product,
             product_properties: [
+              create(:product_property, property: brand, value: 'Alpha'),
+              create(:product_property, property: manufacturer, value: 'Wilson'),
               create(:product_property, property: length, value: '120.5')
             ]
           )
